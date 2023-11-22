@@ -1,0 +1,40 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.timer {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#minutes, #seconds {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#start {
+    background-color: green;
+    color: white;
+}
+
+#stop {
+    background-color: red;
+    color: white;
+}
+
+#reset {
+    background-color: blue;
+    color: white;
+}
