@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Pomodoro Timer</title>
+  <link rel="stylesheet" href="front.css">
+  <style>
+    body {
+      background-image: url('img.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .timer {
+      font-family: 'Dancing Script', cursive;
+      font-size: 50px;
+      color: #fff;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: timer-spin 10s linear infinite;
+    }
+
+    #minutes, #seconds {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 0 10px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      margin-right: 10px;
+    }
+
+    #start:hover {
+      background-color: #00ff00;
+      color: #fff;
+    }
+
+    #stop:hover {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    #reset:hover {
+      background-color: #0000ff;
+      color: #fff;
+    }
+
+    @keyframes timer-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aesthetic Pomodoro Timer</h1>
+
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <script src="front.js"></script>
+</body>
+</html>
+
+    }
+
+    #stop:hover {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    #reset:hover {
+      background-color: #0000ff;
+      color: #fff;
+    }
+
+    .timer-animation {
+      animation: timer-spin 10s linear infinite;
+    }
+
+    @keyframes timer-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      border: 2px solid #fff;
+      cursor: pointer;
+    }
+
+    .image-container img.selected {
+      border: 3px solid #00ff00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aesthetic Pomodoro Timer</h1>
+
+    <div class="image-container" id="imageContainer">
+      </div>
+
+    <div class="timer">
+      <span id="minutes" class="timer-animation">25</span>:<span id="seconds">00</span>
+    </div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+  </div>
+  <script src="front.js"></script>
+</body>
+</html>
+
